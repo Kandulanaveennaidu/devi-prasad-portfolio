@@ -1,0 +1,1085 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Devi Prasad Pasupuleti — UI/UX Designer & Creative Professional
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of Devi Prasad Pasupuleti — Innovative UI/UX Designer, Graphic Designer & Video Editor with expertise in creating intuitive and engaging user interfaces."
+    />
+    <meta
+      name="keywords"
+      content="UI/UX Designer, Graphic Designer, Video Editor, Portfolio, Devi Prasad, Figma, Adobe XD, User Interface Design"
+    />
+    <meta name="author" content="Devi Prasad Pasupuleti" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- ==================== PRELOADER ==================== -->
+    <div id="preloader">
+      <div class="loader">
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <div class="loader-ring"></div>
+        <span class="loader-text">DP</span>
+      </div>
+    </div>
+
+    <!-- ==================== CURSOR ==================== -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-follower" id="cursorFollower"></div>
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#hero" class="nav-logo">
+          <span class="logo-text">D<span class="logo-accent">P</span></span>
+        </a>
+        <ul class="nav-menu" id="navMenu">
+          <li>
+            <a href="#hero" class="nav-link active" data-section="hero">Home</a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link" data-section="about">About</a>
+          </li>
+          <li>
+            <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+          </li>
+          <li>
+            <a href="#experience" class="nav-link" data-section="experience"
+              >Experience</a
+            >
+          </li>
+          <li>
+            <a href="#education" class="nav-link" data-section="education"
+              >Education</a
+            >
+          </li>
+          <li>
+            <a
+              href="#certifications"
+              class="nav-link"
+              data-section="certifications"
+              >Certifications</a
+            >
+          </li>
+          <li>
+            <a href="#work" class="nav-link" data-section="work"
+              >Work</a
+            >
+          </li>
+          <li>
+            <a href="#contact" class="nav-link" data-section="contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+          <span class="hamburger-line"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section id="hero" class="hero-section">
+      <canvas id="particleCanvas" class="particle-canvas"></canvas>
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-badge animate-on-scroll">
+            <span class="badge-dot"></span>
+            Available for Freelance Work
+          </div>
+          <h1 class="hero-title animate-on-scroll">
+            Hi, I'm <span class="gradient-text">Devi Prasad</span>
+          </h1>
+          <div class="hero-subtitle-wrapper animate-on-scroll">
+            <span class="hero-subtitle-prefix">I'm a&nbsp;</span>
+            <span class="typing-text" id="typingText"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+          <p class="hero-description animate-on-scroll">
+            Crafting intuitive digital experiences through innovative design
+            thinking, visual storytelling, and user-centered principles.
+          </p>
+          <div class="hero-cta animate-on-scroll">
+            <a href="#contact" class="btn btn-primary">
+              <span>Let's Talk</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#skills" class="btn btn-outline">
+              <span>View My Work</span>
+              <i class="fas fa-briefcase"></i>
+            </a>
+          </div>
+          <div class="hero-stats animate-on-scroll">
+            <div class="stat-item">
+              <span class="stat-number" data-target="1">0</span
+              ><span class="stat-suffix">+</span>
+              <span class="stat-label">Years Exp.</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="7">0</span
+              ><span class="stat-suffix">+</span>
+              <span class="stat-label">Design Tools</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number" data-target="50">0</span
+              ><span class="stat-suffix">+</span>
+              <span class="stat-label">Projects Done</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual animate-on-scroll">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-glow"></div>
+            <div class="hero-image-border">
+              <img
+                src="profile.webp"
+                alt="Devi Prasad Pasupuleti"
+                class="hero-image"
+                id="heroImage"
+              />
+            </div>
+            <div class="floating-badge badge-1">
+              <i class="fas fa-palette"></i>
+              <span>UI/UX</span>
+            </div>
+            <div class="floating-badge badge-2">
+              <i class="fas fa-wand-magic-sparkles"></i>
+              <span>Design</span>
+            </div>
+            <div class="floating-badge badge-3">
+              <i class="fas fa-video"></i>
+              <span>Video</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="mouse">
+          <div class="mouse-wheel"></div>
+        </div>
+        <span>Scroll Down</span>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section id="about" class="section about-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag"><i class="fas fa-user"></i> About Me</span>
+          <h2 class="section-title">
+            Discover My <span class="gradient-text">Creative Journey</span>
+          </h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="about-grid">
+          <div class="about-content animate-on-scroll">
+            <p class="about-text">
+              I am an <strong>Innovative UI/UX Designer</strong> with a strong
+              background in creating intuitive and engaging user interfaces. I
+              possess a skillset in applying design principles to produce
+              high-quality graphics, interactive prototypes, and mockups
+              tailored to client needs.
+            </p>
+            <p class="about-text">
+              My strength lies in balancing functional requirements with
+              aesthetics to deliver designs that enhance user experience and
+              satisfaction. I have a track record of success collaborating with
+              cross-functional teams to drive product visions and develop
+              innovative solutions for complex design challenges.
+            </p>
+            <p class="about-text">
+              As a <strong>Multidisciplinary Designer</strong> with over 1 year
+              of experience specializing in educational content design and
+              visual storytelling, I am skilled at transforming complex concepts
+              into clear, engaging, and user-centric experiences. Passionate
+              about blending creativity with technology to craft impactful
+              solutions.
+            </p>
+            <div class="about-info-grid">
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+                <div>
+                  <span class="info-label">Email</span>
+                  <span class="info-value">deviprasaduiux09@gmail.com</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-phone"></i>
+                <div>
+                  <span class="info-label">Phone</span>
+                  <span class="info-value">+91 8555035279</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-globe"></i>
+                <div>
+                  <span class="info-label">Languages</span>
+                  <span class="info-value">English, Telugu</span>
+                </div>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <div>
+                  <span class="info-label">Location</span>
+                  <span class="info-value">Miryalaguda, India</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="about-cards animate-on-scroll">
+            <div class="about-card">
+              <div class="card-icon"><i class="fas fa-pencil-ruler"></i></div>
+              <h3>UI/UX Design</h3>
+              <p>
+                Creating intuitive interfaces with user-centered design
+                principles and modern aesthetics.
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="card-icon"><i class="fas fa-bezier-curve"></i></div>
+              <h3>Graphic Design</h3>
+              <p>
+                Producing high-quality graphics, thumbnails, and visual content
+                for diverse platforms.
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="card-icon"><i class="fas fa-film"></i></div>
+              <h3>Video Editing</h3>
+              <p>
+                Crafting engaging video content with professional editing and
+                motion graphics.
+              </p>
+            </div>
+            <div class="about-card">
+              <div class="card-icon"><i class="fas fa-lightbulb"></i></div>
+              <h3>Design Research</h3>
+              <p>
+                Exploring innovative approaches in design research to drive
+                meaningful outcomes.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SKILLS SECTION ==================== -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag"
+            ><i class="fas fa-code"></i> Skills & Tools</span
+          >
+          <h2 class="section-title">
+            My <span class="gradient-text">Technical Arsenal</span>
+          </h2>
+          <div class="section-line"></div>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Technical Skills -->
+          <div class="skills-column animate-on-scroll">
+            <h3 class="skills-column-title">
+              <i class="fas fa-brain"></i> Technical Skills
+            </h3>
+            <div class="skill-bars">
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span class="skill-name">User Interface Design</span>
+                  <span class="skill-percent">92%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="92"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span class="skill-name">Prototyping & Wireframing</span>
+                  <span class="skill-percent">88%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="88"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span class="skill-name">User Research</span>
+                  <span class="skill-percent">85%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="85"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span class="skill-name">Responsive Design</span>
+                  <span class="skill-percent">90%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="90"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span class="skill-name">Graphic Design</span>
+                  <span class="skill-percent">87%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="87"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span class="skill-name">Accessibility (A11y)</span>
+                  <span class="skill-percent">80%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="80"></div>
+                </div>
+              </div>
+              <div class="skill-bar-item">
+                <div class="skill-bar-header">
+                  <span class="skill-name">User Testing</span>
+                  <span class="skill-percent">82%</span>
+                </div>
+                <div class="skill-bar-track">
+                  <div class="skill-bar-fill" data-width="82"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tools -->
+          <div class="skills-column animate-on-scroll">
+            <h3 class="skills-column-title">
+              <i class="fas fa-tools"></i> Design Tools
+            </h3>
+            <div class="tools-grid">
+              <div class="tool-card">
+                <div class="tool-icon" style="--tool-color: #31a8ff">
+                  <i class="fa-brands fa-adobe"></i>
+                </div>
+                <span class="tool-name">Photoshop</span>
+                <div class="tool-level">
+                  <div class="tool-level-fill" style="--level: 90%"></div>
+                </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon" style="--tool-color: #ff9a00">
+                  <i class="fa-brands fa-adobe"></i>
+                </div>
+                <span class="tool-name">Illustrator</span>
+                <div class="tool-level">
+                  <div class="tool-level-fill" style="--level: 85%"></div>
+                </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon" style="--tool-color: #9999ff">
+                  <i class="fa-brands fa-adobe"></i>
+                </div>
+                <span class="tool-name">Premiere Pro</span>
+                <div class="tool-level">
+                  <div class="tool-level-fill" style="--level: 80%"></div>
+                </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon" style="--tool-color: #ff61f6">
+                  <i class="fa-brands fa-adobe"></i>
+                </div>
+                <span class="tool-name">Adobe XD</span>
+                <div class="tool-level">
+                  <div class="tool-level-fill" style="--level: 88%"></div>
+                </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon" style="--tool-color: #a259ff">
+                  <i class="fa-brands fa-figma"></i>
+                </div>
+                <span class="tool-name">Figma</span>
+                <div class="tool-level">
+                  <div class="tool-level-fill" style="--level: 92%"></div>
+                </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon" style="--tool-color: #00c4cc">
+                  <i class="fas fa-paintbrush"></i>
+                </div>
+                <span class="tool-name">Canva</span>
+                <div class="tool-level">
+                  <div class="tool-level-fill" style="--level: 95%"></div>
+                </div>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon" style="--tool-color: #4caf50">
+                  <i class="fas fa-video"></i>
+                </div>
+                <span class="tool-name">Filmora</span>
+                <div class="tool-level">
+                  <div class="tool-level-fill" style="--level: 78%"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EXPERIENCE SECTION ==================== -->
+    <section id="experience" class="section experience-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag"
+            ><i class="fas fa-briefcase"></i> Experience</span
+          >
+          <h2 class="section-title">
+            Professional <span class="gradient-text">Experience</span>
+          </h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="timeline">
+          <div class="timeline-item animate-on-scroll">
+            <div class="timeline-dot">
+              <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <div class="timeline-content glass-card">
+              <div class="timeline-header">
+                <h3 class="timeline-title">UI/UX Designer</h3>
+                <span class="timeline-badge">Current Role</span>
+              </div>
+              <span class="timeline-date">
+                <i class="fas fa-calendar-alt"></i> 1+ Year of Experience
+              </span>
+              <p class="timeline-description">
+                Multidisciplinary Designer specializing in educational content
+                design and visual storytelling. Skilled at transforming complex
+                concepts into clear, engaging, and user-centric experiences.
+              </p>
+              <ul class="timeline-highlights">
+                <li>
+                  <i class="fas fa-check-circle"></i> Created intuitive user
+                  interfaces and engaging visual experiences
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Applied design principles
+                  for high-quality graphics and prototypes
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Collaborated with
+                  cross-functional teams for product vision alignment
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Solved complex design
+                  challenges with innovative solutions
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Balanced functional
+                  requirements with aesthetic excellence
+                </li>
+                <li>
+                  <i class="fas fa-check-circle"></i> Explored innovative design
+                  research approaches
+                </li>
+              </ul>
+              <div class="timeline-tags">
+                <span class="tag">Figma</span>
+                <span class="tag">Adobe XD</span>
+                <span class="tag">Photoshop</span>
+                <span class="tag">Prototyping</span>
+                <span class="tag">User Research</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== EDUCATION SECTION ==================== -->
+    <section id="education" class="section education-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag"
+            ><i class="fas fa-graduation-cap"></i> Education</span
+          >
+          <h2 class="section-title">
+            Academic <span class="gradient-text">Background</span>
+          </h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="education-grid">
+          <div class="education-card glass-card animate-on-scroll">
+            <div class="edu-icon">
+              <i class="fas fa-university"></i>
+            </div>
+            <div class="edu-content">
+              <h3 class="edu-degree">Bachelor's Degree</h3>
+              <p class="edu-field">B.Com Computers</p>
+              <p class="edu-school">
+                <i class="fas fa-building-columns"></i>
+                Sri Chaitanya Degree College, Miryalaguda
+              </p>
+              <div class="edu-date">
+                <i class="fas fa-calendar-alt"></i>
+                September 2021 — May 2024
+              </div>
+            </div>
+          </div>
+          <div class="education-card glass-card animate-on-scroll">
+            <div class="edu-icon">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="edu-content">
+              <h3 class="edu-degree">SSC (Secondary School Certificate)</h3>
+              <p class="edu-field">General Education</p>
+              <p class="edu-school">
+                <i class="fas fa-building-columns"></i>
+                Government High School, Miryalaguda
+              </p>
+              <div class="edu-date">
+                <i class="fas fa-calendar-alt"></i>
+                June 2017 — March 2018
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CERTIFICATIONS SECTION ==================== -->
+    <section id="certifications" class="section certifications-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag"
+            ><i class="fas fa-certificate"></i> Certifications</span
+          >
+          <h2 class="section-title">
+            Professional <span class="gradient-text">Certifications</span>
+          </h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="certifications-grid">
+          <div class="cert-card glass-card animate-on-scroll">
+            <div class="cert-icon">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3 class="cert-title">Graphic Thumbnail Design & Pro AI</h3>
+            <p class="cert-description">
+              Advanced techniques in thumbnail creation, graphic design
+              workflows, and AI-powered design tools for professional content
+              creation.
+            </p>
+            <div class="cert-badge"><i class="fas fa-award"></i> Certified</div>
+          </div>
+          <div class="cert-card glass-card animate-on-scroll">
+            <div class="cert-icon">
+              <i class="fas fa-video"></i>
+            </div>
+            <h3 class="cert-title">Video Editing & YouTube SEO</h3>
+            <p class="cert-description">
+              Professional video editing techniques, content optimization, and
+              YouTube SEO strategies for maximum audience reach and engagement.
+            </p>
+            <div class="cert-badge"><i class="fas fa-award"></i> Certified</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WORK / PORTFOLIO SECTION ==================== -->
+    <section id="work" class="section work-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag"
+            ><i class="fas fa-layer-group"></i> Portfolio</span
+          >
+          <h2 class="section-title">
+            Featured <span class="gradient-text">Work</span>
+          </h2>
+          <p class="work-section-subtitle">A showcase of my design projects — crafted with precision, creativity, and user-first thinking.</p>
+          <div class="section-line"></div>
+        </div>
+
+        <!-- Featured Project: GK Agro Farms -->
+        <div class="work-featured-project animate-on-scroll">
+          <div class="work-project-header">
+            <div class="work-project-label">
+              <span class="work-project-number">01</span>
+              <span class="work-project-type">Website Design</span>
+            </div>
+            <h3 class="work-project-title">GK Agro Farms</h3>
+            <p class="work-project-description">
+              A complete website design for GK Agro Farms — a sustainable agro-business venture specializing in cultivation of commercial crops, medicinal plants, and herbal extracts. The project includes landing page, about us, executive summary, blog, careers, and contact page designs with a nature-inspired green theme.
+            </p>
+            <div class="work-project-tags">
+              <span class="work-tag"><i class="fa-brands fa-figma"></i> Figma</span>
+              <span class="work-tag"><i class="fas fa-pencil-ruler"></i> UI/UX</span>
+              <span class="work-tag"><i class="fas fa-mobile-alt"></i> Responsive</span>
+              <span class="work-tag"><i class="fas fa-leaf"></i> Agro-Business</span>
+              <span class="work-tag"><i class="fas fa-palette"></i> Branding</span>
+            </div>
+          </div>
+
+          <!-- Thumbnail Gallery -->
+          <div class="work-gallery">
+            <div class="work-gallery-thumbs">
+              <div class="work-thumb" onclick="openLightbox(0)" data-label="Homepage">
+                <img src="assets/GK-Fram/Artboard 1.png" alt="Homepage" loading="lazy" />
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-search-plus"></i>
+                  <span>Homepage</span>
+                </div>
+              </div>
+              <div class="work-thumb" onclick="openLightbox(1)" data-label="Full Scroll">
+                <img src="assets/GK-Fram/Artboard 2.png" alt="Full Website Scroll" loading="lazy" />
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-search-plus"></i>
+                  <span>Full Scroll</span>
+                </div>
+              </div>
+              <div class="work-thumb" onclick="openLightbox(2)" data-label="About Us">
+                <img src="assets/GK-Fram/Artboard 3.png" alt="About Us Page" loading="lazy" />
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-search-plus"></i>
+                  <span>About Us</span>
+                </div>
+              </div>
+              <div class="work-thumb" onclick="openLightbox(3)" data-label="Executive Summary">
+                <img src="assets/GK-Fram/Artboard 4.png" alt="Executive Summary" loading="lazy" />
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-search-plus"></i>
+                  <span>Details</span>
+                </div>
+              </div>
+              <div class="work-thumb" onclick="openLightbox(4)" data-label="Careers">
+                <img src="assets/GK-Fram/Artboard 5.png" alt="Careers Page" loading="lazy" />
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-search-plus"></i>
+                  <span>Careers</span>
+                </div>
+              </div>
+              <div class="work-thumb" onclick="openLightbox(5)" data-label="Contact">
+                <img src="assets/GK-Fram/Artboard 6.png" alt="Contact Page" loading="lazy" />
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-search-plus"></i>
+                  <span>Contact</span>
+                </div>
+              </div>
+              <div class="work-thumb" onclick="openLightbox(6)" data-label="Blog">
+                <img src="assets/GK-Fram/Artboard  7.png" alt="Blog Page" loading="lazy" />
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-search-plus"></i>
+                  <span>Blog</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Stats -->
+          <div class="work-project-stats">
+            <div class="work-stat">
+              <span class="work-stat-number">7</span>
+              <span class="work-stat-label">Pages Designed</span>
+            </div>
+            <div class="work-stat-divider"></div>
+            <div class="work-stat">
+              <span class="work-stat-number">100%</span>
+              <span class="work-stat-label">Responsive</span>
+            </div>
+            <div class="work-stat-divider"></div>
+            <div class="work-stat">
+              <span class="work-stat-number">UI/UX</span>
+              <span class="work-stat-label">Full Design</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Project 02: Video Editing -->
+        <div class="work-featured-project animate-on-scroll" style="margin-top: 48px;">
+          <div class="work-project-header">
+            <div class="work-project-label">
+              <span class="work-project-number">02</span>
+              <span class="work-project-type">Video Editing</span>
+            </div>
+            <h3 class="work-project-title">Video Editing & Reels</h3>
+            <p class="work-project-description">
+              A collection of professionally edited videos and social media reels — covering event promotions, storytelling, seasonal campaigns, field documentation, and brand content. Each piece is crafted with dynamic transitions, color grading, and engaging visual narratives.
+            </p>
+            <div class="work-project-tags">
+              <span class="work-tag"><i class="fas fa-video"></i> Video Editing</span>
+              <span class="work-tag"><i class="fas fa-film"></i> Reels</span>
+              <span class="work-tag"><i class="fas fa-magic"></i> Motion Graphics</span>
+              <span class="work-tag"><i class="fas fa-paint-brush"></i> Color Grading</span>
+              <span class="work-tag"><i class="fas fa-bullhorn"></i> Social Media</span>
+            </div>
+          </div>
+
+          <!-- Video Gallery -->
+          <div class="work-gallery">
+            <div class="work-gallery-thumbs work-video-thumbs">
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(0)">
+                <video src="assets/videos/Coming Soon.mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Coming Soon</span>
+                </div>
+              </div>
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(1)">
+                <video src="assets/videos/Sanskrithi .mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Sanskrithi</span>
+                </div>
+              </div>
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(2)">
+                <video src="assets/videos/Sowing 1.mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Sowing 1</span>
+                </div>
+              </div>
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(3)">
+                <video src="assets/videos/Sowing.mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Sowing</span>
+                </div>
+              </div>
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(4)">
+                <video src="assets/videos/admission reel.mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Admission Reel</span>
+                </div>
+              </div>
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(5)">
+                <video src="assets/videos/chemistry pub .mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Chemistry Pub</span>
+                </div>
+              </div>
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(6)">
+                <video src="assets/videos/chemistry pub 1 .mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Chemistry Pub 2</span>
+                </div>
+              </div>
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(7)">
+                <video src="assets/videos/christmas reel 1(1).mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Christmas Reel</span>
+                </div>
+              </div>
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(8)">
+                <video src="assets/videos/christmas reel 1.mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Christmas Reel 2</span>
+                </div>
+              </div>
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(9)">
+                <video src="assets/videos/field trip .mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Field Trip</span>
+                </div>
+              </div>
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(10)">
+                <video src="assets/videos/mandi .mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Mandi</span>
+                </div>
+              </div>
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(11)">
+                <video src="assets/videos/sowing(1).mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Sowing Reel</span>
+                </div>
+              </div>
+              <div class="work-thumb work-video-thumb" onclick="openVideoLightbox(12)">
+                <video src="assets/videos/story telling.mp4" muted preload="metadata"></video>
+                <div class="work-thumb-overlay">
+                  <i class="fas fa-play"></i>
+                  <span>Story Telling</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project Stats -->
+          <div class="work-project-stats">
+            <div class="work-stat">
+              <span class="work-stat-number">13</span>
+              <span class="work-stat-label">Videos Edited</span>
+            </div>
+            <div class="work-stat-divider"></div>
+            <div class="work-stat">
+              <span class="work-stat-number">Reels</span>
+              <span class="work-stat-label">Social Media</span>
+            </div>
+            <div class="work-stat-divider"></div>
+            <div class="work-stat">
+              <span class="work-stat-number">Pro</span>
+              <span class="work-stat-label">Color Grading</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-tag"
+            ><i class="fas fa-paper-plane"></i> Get in Touch</span
+          >
+          <h2 class="section-title">
+            Let's <span class="gradient-text">Work Together</span>
+          </h2>
+          <div class="section-line"></div>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info animate-on-scroll">
+            <p class="contact-description">
+              I'm always open to discussing new projects, creative ideas, or
+              opportunities to be part of your vision. Let's create something
+              amazing together!
+            </p>
+            <div class="contact-cards">
+              <a
+                href="mailto:deviprasaduiux09@gmail.com"
+                class="contact-card glass-card"
+              >
+                <div class="contact-card-icon">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div>
+                  <h4>Email Me</h4>
+                  <p>deviprasaduiux09@gmail.com</p>
+                </div>
+              </a>
+              <a href="tel:+918555035279" class="contact-card glass-card">
+                <div class="contact-card-icon">
+                  <i class="fas fa-phone"></i>
+                </div>
+                <div>
+                  <h4>Call Me</h4>
+                  <p>+91 8555035279</p>
+                </div>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/deviprasad-uiux-11b039352"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="contact-card glass-card"
+              >
+                <div class="contact-card-icon">
+                  <i class="fab fa-linkedin"></i>
+                </div>
+                <div>
+                  <h4>LinkedIn</h4>
+                  <p>Connect with me</p>
+                </div>
+              </a>
+            </div>
+            <div class="social-links">
+              <a
+                href="mailto:deviprasaduiux09@gmail.com"
+                class="social-link"
+                aria-label="Email"
+              >
+                <i class="fas fa-envelope"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/deviprasad-uiux-11b039352"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="social-link"
+                aria-label="LinkedIn"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a
+                href="tel:+918555035279"
+                class="social-link"
+                aria-label="Phone"
+              >
+                <i class="fas fa-phone"></i>
+              </a>
+            </div>
+          </div>
+          <div class="contact-form-wrapper animate-on-scroll">
+            <form class="contact-form glass-card" id="contactForm">
+              <div class="form-group">
+                <label for="name" class="form-label">Full Name</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-user"></i>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Your full name"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-envelope"></i>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="your@email.com"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="subject" class="form-label">Subject</label>
+                <div class="input-wrapper">
+                  <i class="fas fa-tag"></i>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    placeholder="Project discussion"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message" class="form-label">Message</label>
+                <div class="input-wrapper textarea-wrapper">
+                  <i class="fas fa-message"></i>
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Tell me about your project..."
+                    required
+                  ></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-submit">
+                <span>Send Message</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+              <div class="form-status" id="formStatus"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#hero" class="footer-logo">
+              D<span class="logo-accent">P</span>
+            </a>
+            <p class="footer-tagline">
+              Designing the future, one pixel at a time.
+            </p>
+          </div>
+          <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
+            <a href="#work">Work</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="footer-social">
+            <a href="mailto:deviprasaduiux09@gmail.com" aria-label="Email"
+              ><i class="fas fa-envelope"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/deviprasad-uiux-11b039352"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+            <a href="tel:+918555035279" aria-label="Phone"
+              ><i class="fas fa-phone"></i
+            ></a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 Devi Prasad Pasupuleti. All rights reserved.</p>
+          <p>
+            Designed with <i class="fas fa-heart" style="color: #ff6b6b"></i> &
+            Creativity
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- ==================== BACK TO TOP ==================== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- ==================== LIGHTBOX MODAL ==================== -->
+    <div class="lightbox-modal" id="lightboxModal">
+      <div class="lightbox-backdrop" onclick="closeLightbox()"></div>
+      <button class="lightbox-close" onclick="closeLightbox()" aria-label="Close">
+        <i class="fas fa-times"></i>
+      </button>
+      <button class="lightbox-nav lightbox-prev" onclick="navigateLightbox(-1)" aria-label="Previous">
+        <i class="fas fa-chevron-left"></i>
+      </button>
+      <button class="lightbox-nav lightbox-next" onclick="navigateLightbox(1)" aria-label="Next">
+        <i class="fas fa-chevron-right"></i>
+      </button>
+      <div class="lightbox-content">
+        <img id="lightboxImage" src="" alt="" />
+        <video id="lightboxVideo" src="" controls autoplay style="display:none;"></video>
+      </div>
+      <div class="lightbox-info">
+        <span class="lightbox-title" id="lightboxTitle"></span>
+        <span class="lightbox-counter" id="lightboxCounter"></span>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+  </body>
+</html>
