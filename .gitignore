@@ -1,0 +1,23 @@
+# Large video files (exceeding GitHub's 100MB limit)
+# Please host these separately or use external video hosting services
+assets/videos/Coming Soon.mp4
+assets/videos/field trip .mp4
+assets/videos/story telling.mp4
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+.qodo/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Dependencies
+node_modules/
