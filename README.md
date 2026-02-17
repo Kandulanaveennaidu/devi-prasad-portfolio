@@ -60,16 +60,19 @@ devi-prasad-portfolio/
 ### Installation
 
 1. Clone the repository:
+
 ```bash
 git clone https://github.com/Kandulanaveennaidu/devi-prasad-portfolio.git
 ```
 
 2. Navigate to the project directory:
+
 ```bash
 cd devi-prasad-portfolio
 ```
 
 3. Open `index.html` in your browser or serve with a local server:
+
 ```bash
 # Using Python
 python -m http.server 8000
@@ -86,16 +89,19 @@ php -S localhost:8000
 ## 🎨 Customization
 
 ### Colors
+
 Edit the CSS variables in `style.css`:
+
 ```css
 :root {
-  --accent-1: #00d4ff;    /* Cyan */
-  --accent-2: #7c3aed;    /* Purple */
-  --accent-3: #a855f7;    /* Light Purple */
+  --accent-1: #00d4ff; /* Cyan */
+  --accent-2: #7c3aed; /* Purple */
+  --accent-3: #a855f7; /* Light Purple */
 }
 ```
 
 ### Content
+
 - Update personal information in `index.html`
 - Modify sections as needed
 - Replace images and videos in `assets/` folder
@@ -110,18 +116,23 @@ Edit the CSS variables in `style.css`:
 ## 🌟 Key Features Implementation
 
 ### Custom Cursor
+
 Interactive cursor with follower effect that responds to hoverable elements.
 
 ### Particle Background
+
 Animated particle canvas with connection lines for visual depth.
 
 ### Scroll Animations
+
 Intersection Observer API for smooth reveal animations.
 
 ### Lightbox Gallery
+
 Full-screen image and video viewer with keyboard navigation.
 
 ### Typing Effect
+
 Dynamic text rotation showing multiple roles.
 
 ## 📧 Contact
@@ -138,6 +149,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👤 Author
 
 **Devi Prasad Pasupuleti**
+
 - UI/UX Designer
 - Graphic Designer
 - Video Editor
